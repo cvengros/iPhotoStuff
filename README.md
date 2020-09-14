@@ -20,12 +20,12 @@ Use google photos in "High Quality" (not "original") to view, search and share y
     * File Name: Use File Name
     * Subfolder Format: Moment Name
     * Select a reasonable path to put your pictures to: e.g. `~/Downloads/iCloudpics`
-    * Check the folder size (should be something close to 5G)
-1. Make a backup, in case the script fails `cp -r iCloudpics/ iCloudpics-backup`
+  a. When done, check the folder size (should be something close to 5G)
+1. Make a backup, in case the script fails `cp -r ~/Downloads/iCloudpics/ ~/Downloads/iCloudpics-backup`
 1. Run `./fix_directory_names.sh ~/Downloads/iCloudpics`
 1. Copy the resulting directories to "mirrored/fotky/iPhone fotky", plus `iPhone fotky`
     * `rsync -auvh ~/Downloads/iCloudpics/ ~/iPhone\ fotky/`
     * `rsync -auvh /Users/petr/Downloads/iCloudpics/ /Volumes/APACER/mirrored/Fotky/iPhone\ fotky/`
     * rsync -auvh /Users/petr/Downloads/iCloudpics/ /Volumes/Slim/mirrored/Fotky/iPhone\ fotky/
-1. delete the selected photos, agree it will be deleted on all devices
-1. put your iPhone on the charger overnight and wait until iCloud syncs and photos disappear from your iphone. Never disable/enable iCloud sync, bad things will happen
+1. Delete the selected photos, agree it will be deleted on all devices
+1. Put your iPhone on the charger overnight and wait until iCloud syncs and photos disappear from your iphone. Never disable/enable iCloud sync, bad things will happen
