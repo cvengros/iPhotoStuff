@@ -2,6 +2,7 @@
 
 # preprocess the super-weird, like Třeboň, South Bohemia - Valy, August 2, 2018
 # dt=`echo "$WEIRD_DATE" | grep -o '[A-Za-z]\+ [0-9]\+, [0-9]\{4\}$'`
+# don't - you also need to take into account two super-weird directories for one date
 
 
 DIR=${1:-`dirname $0`}

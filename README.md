@@ -26,6 +26,7 @@ Use google photos in "High Quality" (not "original") to view, search and share y
 1. Copy the resulting directories to "mirrored/fotky/iPhone fotky", plus `iPhone fotky`
     * `rsync -auvh ~/Downloads/iCloudpics/ ~/iPhone\ fotky/`
     * `rsync -auvh /Users/petr/Downloads/iCloudpics/ /Volumes/APACER/mirrored/Fotky/iPhone\ fotky/`
-    * rsync -auvh /Users/petr/Downloads/iCloudpics/ /Volumes/Slim/mirrored/Fotky/iPhone\ fotky/
+    * `rsync -auvh /Users/petr/Downloads/iCloudpics/ /Volumes/Slim/mirrored/Fotky/iPhone\ fotky/`
 1. Delete the selected photos, agree it will be deleted on all devices
 1. Put your iPhone on the charger overnight and wait until iCloud syncs and photos disappear from your iphone. Never disable/enable iCloud sync, bad things will happen
+1. Cleanup: move ~/Downloads/iCloudpics/ and ~/Downloads/iCloudpics-backup to trash, commit any changes in this repo 
